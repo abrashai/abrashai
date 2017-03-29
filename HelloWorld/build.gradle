@@ -1,0 +1,14 @@
+// Apply the java plugin to add support for Java
+apply plugin: 'java'
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+   // maven{   url 'https://10.109.32.183:8081/nexus/content/groups/public'   }
+   maven { url 'http://repo.maven.apache.org/maven2' }
+}
+
+// In this section you declare the dependencies for your production and test code
+dependencies {
+   
+    compile 'junit:junit:4.12'
+}
